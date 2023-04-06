@@ -24,20 +24,24 @@ Users:
 - first name
 - last name
 - phone number 
+
 Projects:
 - id
 - name 
 - designer_id
+
 Images:
 - id
 - image
 - project_id
+
 Message:
 - id
 - text
 - timestamp
 - user_id
 - room_id
+
 Room:
 - id
 - user1_id
