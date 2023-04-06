@@ -7,8 +7,10 @@ https://www.figma.com/file/pSOpfnLSQDN3Iysm5G9Bp5/Untitled?node-id=132%3A168&t=2
 For all users:
 - login and register
 - open designer profile and project page
+
 For clients:
 - chat with designer
+
 For designers:
 - crud for project page
 - crud for personal page
