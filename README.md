@@ -17,34 +17,29 @@ For designers:
 - chat with client or another designer
 ## Data models
 Roles:
-- id
-- name
+- id *number* **PK**
+- name *varchar2(50)*
 
 Users:
-- id 
-- role id
-- first name
-- last name
-- phone number 
+- id *number* **PK**
+- role id **FK**
+- first name *varchar2(50)*
+- last name *varchar2(50)*
+- phone number *varchar2(50)*
 
 Projects:
-- id
-- name 
-- designer_id
-
-Images:
-- id
-- image
-- project_id
+- id *number* **PK**
+- name *varchar2(50)*
+- designer_id **FK**
 
 Message:
-- id
-- text
-- timestamp
-- user_id
-- room_id
+- id *number* **PK**
+- text *varchar2(200)*
+- timestamp *timestamp*
+- user_id **FK**
+- room_id **FK**
 
 Room:
-- id
-- user1_id
-- user2_id
+- id *number* **PK**
+- user1_id **FK**
+- user2_id **FK**
