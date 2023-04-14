@@ -8,38 +8,26 @@ For all users:
 - login and register
 - open designer profile and project page
 
-For clients:
-- chat with designer
-
 For designers:
 - crud for project page
 - crud for personal page
-- chat with client or another designer
+- invite another designer to project
 ## Data models
-Roles:
+Designers:
 - id *number* **PK**
-- name *varchar2(50)*
-
-Users:
-- id *number* **PK**
-- role id **FK**
 - first name *varchar2(50)*
 - last name *varchar2(50)*
 - phone number *varchar2(50)*
+- bio *varchar2(500)*
 
 Projects:
 - id *number* **PK**
 - name *varchar2(50)*
-- designer_id **FK**
+- description *varchar2(1000)*
+- instruments *varchar2(100)*
+- designers_projects_id **FK**
 
-Message:
+Designer_projects_id:
 - id *number* **PK**
-- text *varchar2(200)*
-- timestamp *timestamp*
-- user_id **FK**
-- room_id **FK**
-
-Room:
-- id *number* **PK**
-- user1_id **FK**
-- user2_id **FK**
+- designer_id *number*
+- project_id *number*
